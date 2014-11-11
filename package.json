@@ -12,7 +12,7 @@
   "author": "John Henry <john@iamjohnhenry.com>",
   "homepage": "https://github.com/johnhenry/valid-email",
   "scripts": {
-    "test": "expresso test/*",
+    "test": "nodeunit tests",
     "coverage": "istanbul cover nodeunit -- tests",
     "coverage-on-travis": "istanbul cover --report lcovonly nodeunit -- tests && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js"
   },
